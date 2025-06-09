@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lab 8 – Claudia Herrera</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 8px;
+    }
+    h1 {
+      margin: 0;
+    }
+    main {
+      margin-top: 30px;
+    }
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <h1>Lab 8: Node.js & Express</h1>
-  <p>This lab demonstrates my use of Node.js with Express to build a simple static and dynamic server using fetch().</p>
+  <header>
+    <h1>Lab 8: Node.js & Express Server</h1>
+    <p>By Claudia Herrera</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>This lab introduced the use of <strong>Node.js</strong> with the <strong>Express</strong> framework to create a simple server that serves both static and dynamic content. We used <code>fetch()</code> to pull data from JSONPlaceholder and practiced chaining promises using <code>.then()</code> and <code>.catch()</code>.</p>
+    </section>
+
+    <section>
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>JavaScript (ES6)</li>
+        <li>HTML</li>
+        <li>JSONPlaceholder API</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What I Learned</h2>
+      <p>I learned how to set up a basic Express server, serve static files from a public folder, and create dynamic API routes using <code>/photos</code> and <code>/photos/:id</code>. This helped me better understand backend routing and asynchronous data fetching with JavaScript.</p>
+    </section>
+
+    <section>
+      <h2>Demo</h2>
+      <p>To see the server in action, visit:</p>
+      <ul>
+        <li><a href="http://localhost:8080/photos" target="_blank">localhost:8080/photos</a> – View the first 20 photos</li>
+        <li><a href="http://localhost:8080/photos/3" target="_blank">localhost:8080/photos/3</a> – View photo with ID 3</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Claudia Herrera | CIT 281 Lab 8</p>
+  </footer>
 </body>
 </html>
