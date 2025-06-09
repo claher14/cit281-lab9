@@ -4,38 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lab 9 – Claudia Herrera</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7fa, #f1f8e9);
+      color: #2c3e50;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
+
     header {
-      background-color: #2c3e50;
+      background-color: #1abc9c;
       color: white;
-      padding: 20px 40px;
-      border-radius: 8px;
+      padding: 40px;
+      text-align: center;
+      border-bottom: 6px solid #16a085;
     }
-    h1 {
+
+    header h1 {
       margin: 0;
+      font-size: 2.8rem;
     }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
     main {
-      margin-top: 30px;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
     }
+
     section {
       background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
     }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      color: #1abc9c;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #1abc9c;
+      text-decoration: underline;
+    }
+
     footer {
-      margin-top: 40px;
       text-align: center;
-      font-size: 0.9em;
-      color: #888;
+      font-size: 0.9rem;
+      color: #555;
+      padding: 20px;
+      border-top: 1px solid #ccc;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -48,7 +93,7 @@
   <main>
     <section>
       <h2>Overview</h2>
-      <p>This lab introduced the use of <strong>Node.js</strong> with the <strong>Express</strong> framework to create a simple server that serves both static and dynamic content. We used <code>fetch()</code> to pull data from JSONPlaceholder and practiced chaining promises using <code>.then()</code> and <code>.catch()</code>.</p>
+      <p>This lab introduced the use of <strong>Node.js</strong> with the <strong>Express</strong> framework to build a basic server that serves static and dynamic content. It demonstrates how to use the <code>fetch()</code> API to retrieve external data and handle asynchronous operations with JavaScript promises.</p>
     </section>
 
     <section>
@@ -56,23 +101,22 @@
       <ul>
         <li>Node.js</li>
         <li>Express.js</li>
-        <li>JavaScript (ES6)</li>
-        <li>HTML</li>
+        <li>JavaScript ES6</li>
         <li>JSONPlaceholder API</li>
+        <li>Git & GitHub</li>
       </ul>
     </section>
 
     <section>
       <h2>What I Learned</h2>
-      <p>I learned how to set up a basic Express server, serve static files from a public folder, and create dynamic API routes using <code>/photos</code> and <code>/photos/:id</code>. This helped me better understand backend routing and asynchronous data fetching with JavaScript.</p>
+      <p>I practiced backend development by building routes, serving static files, and handling asynchronous data fetching with promise chains. I also learned how to use <code>nodemon</code> for development and structure a project for deployment on GitHub Pages.</p>
     </section>
 
     <section>
-      <h2>Demo</h2>
-      <p>To see the server in action, visit:</p>
+      <h2>Demo Routes</h2>
       <ul>
-        <li><a href="http://localhost:8080/photos" target="_blank">localhost:8080/photos</a> – View the first 20 photos</li>
-        <li><a href="http://localhost:8080/photos/3" target="_blank">localhost:8080/photos/3</a> – View photo with ID 3</li>
+        <li><a href="http://localhost:8080/photos" target="_blank">/photos – First 20 photo objects</a></li>
+        <li><a href="http://localhost:8080/photos/3" target="_blank">/photos/3 – Single photo object by ID</a></li>
       </ul>
     </section>
   </main>
